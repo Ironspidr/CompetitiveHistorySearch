@@ -5,6 +5,6 @@ history = requests.get(
     'https://www.nj-web.com/pubDB/CompetitiveHistory.json').json()
 
 
-full_history = json.loads(history)
-
-print(full_history[0]['2023'])
+chooseYear = input('Enter the year: ')
+# chooseEvent = input('Enter the event [1] for : ')
+result = history[chooseYear]
